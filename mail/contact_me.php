@@ -18,9 +18,13 @@ $message = $_POST['message'];
 // Create the email and send the message
 $to = 'will.lindemann@gmail.com';
 $email_subject = "Contato pelo site:  $name";
-$email_body = "Mensagem enviada do site.\n\n"."Detalhes:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = "From: will.lindemann@gmail.com\n";
-$headers .= "Reply-To: $email_address";
+$email_body = "Mensagem enviada do site.\n\n"."Detalhes:\n\nNome: $name\n\nE-mail: $email_address\n\nTelefone: $phone\n\nMensagem:\n$message";
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$headers .= "From: will.lindemann@gmail.com" . "\r\n";
+$headers .= "Reply-To: $email_address" . "\r\n";
+$headers .= 'X-Mailer: PHP/' . phpversion();
+
 mail($to,$email_subject,$email_body,$headers);
 return true;
 ?>
