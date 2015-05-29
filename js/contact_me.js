@@ -1,32 +1,32 @@
 $(function() {
 
-    $("input,textarea").jqBootstrapValidation({
+    $("input,select,textarea").not("[type=submit]").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // additional error messages or events
         },
         submitSuccess: function($form, event) {
-            event.preventDefault(); 
-            
+            event.preventDefault();
+
             var name = $("#name").val(),
                 email = $("#email").val(),
                 subject = $("#subject").val(),
                 message = $("#message").val();
                 firstName = name; // For Success/Failure Message
-            
+
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
-            
+
             $.ajax({
-                url: "http://formspree.io/will.lindemann@gmail.com",
+                url: 'http://formspree.io/' + 'will.lindemann' + '@' + 'gmail.com',
                 type: "POST",
                 data: {
-                    name: name,
-                    subject: subject,
-                    email: email,
-                    message: message
+                    Nome: name,
+                    Assunto: subject,
+                    Email: email,
+                    Mensagem: message
                 },
                 dataType: "json",
                 cache: false,
