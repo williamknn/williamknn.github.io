@@ -184,7 +184,7 @@ define({ "api": [
         "Success 200": [
           {
             "group": "Success 200",
-            "type": "Job",
+            "type": "Object",
             "optional": false,
             "field": "job",
             "description": "<p>Unique job.</p>"
@@ -285,7 +285,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/jobs/:jobId/accept",
-    "title": "Accept job.",
+    "title": "Accept job",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -306,10 +306,156 @@ define({ "api": [
         "Success 200": [
           {
             "group": "Success 200",
-            "type": "Job",
+            "type": "Object",
             "optional": false,
             "field": "job",
             "description": "<p>Job updated with operator confirmed.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NotAuthenticated",
+            "description": "<p>Request was not authenticated.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NotAuthorized",
+            "description": "<p>User is not authorized.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "app/routes/job.server.routes.js",
+    "groupTitle": "Jobs"
+  },
+  {
+    "type": "post",
+    "url": "/jobs/:jobId/:taskId/checking",
+    "title": "Make checkin",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "jobId",
+            "description": "<p>Job unique ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "taskId",
+            "description": "<p>Task unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.1.0",
+    "name": "PostChecking",
+    "group": "Jobs",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "job",
+            "description": "<p>Job updated with task checkin.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NotAuthenticated",
+            "description": "<p>Request was not authenticated.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NotAuthorized",
+            "description": "<p>User is not authorized.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "app/routes/job.server.routes.js",
+    "groupTitle": "Jobs"
+  },
+  {
+    "type": "post",
+    "url": "/jobs/:jobId/:taskId/endTask",
+    "title": "Finalize a task",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "jobId",
+            "description": "<p>Job unique ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "taskId",
+            "description": "<p>Task unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.1.0",
+    "name": "PostEndTask",
+    "group": "Jobs",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "job",
+            "description": "<p>Job with task ended.</p>"
           }
         ]
       },
@@ -361,6 +507,18 @@ define({ "api": [
             "optional": false,
             "field": "jobId",
             "description": "<p>Job unique ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "lat",
+            "description": "<p>Latitude information.</p>"
+          },
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "lng",
+            "description": "<p>Longitude information.</p>"
           }
         ]
       }
@@ -373,10 +531,10 @@ define({ "api": [
         "Success 200": [
           {
             "group": "Success 200",
-            "type": "Job",
+            "type": "Object",
             "optional": false,
             "field": "job",
-            "description": "<p>Job updated with geolocation.</p>"
+            "description": "<p>Object updated with geolocation.</p>"
           }
         ]
       },
@@ -575,6 +733,12 @@ define({ "api": [
             "optional": false,
             "field": "jobId",
             "description": "<p>Job unique ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "operatorId",
+            "description": "<p>Operator unique ID.</p>"
           }
         ]
       }
@@ -587,7 +751,7 @@ define({ "api": [
         "Success 200": [
           {
             "group": "Success 200",
-            "type": "Job",
+            "type": "Object",
             "optional": false,
             "field": "job",
             "description": "<p>Unique job.</p>"
@@ -654,7 +818,7 @@ define({ "api": [
         "Success 200": [
           {
             "group": "Success 200",
-            "type": "Job",
+            "type": "Object",
             "optional": false,
             "field": "job",
             "description": "<p>Job updated with operator's deny.</p>"
@@ -721,10 +885,83 @@ define({ "api": [
         "Success 200": [
           {
             "group": "Success 200",
-            "type": "Job",
+            "type": "Object",
             "optional": false,
             "field": "job",
             "description": "<p>Job status updated.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NotAuthenticated",
+            "description": "<p>Request was not authenticated.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NotAuthorized",
+            "description": "<p>User is not authorized.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "app/routes/job.server.routes.js",
+    "groupTitle": "Jobs"
+  },
+  {
+    "type": "post",
+    "url": "/jobs/:jobId/:taskId/service",
+    "title": "Status: servicing",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "jobId",
+            "description": "<p>Job unique ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "taskId",
+            "description": "<p>Task unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.1.0",
+    "name": "PostService",
+    "group": "Jobs",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "job",
+            "description": "<p>Job with updated servicing status.</p>"
           }
         ]
       },
@@ -794,10 +1031,89 @@ define({ "api": [
         "Success 200": [
           {
             "group": "Success 200",
-            "type": "Job",
+            "type": "Object",
             "optional": false,
             "field": "job",
             "description": "<p>Job task initialized.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NotAuthenticated",
+            "description": "<p>Request was not authenticated.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NotAuthorized",
+            "description": "<p>User is not authorized.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "app/routes/job.server.routes.js",
+    "groupTitle": "Jobs"
+  },
+  {
+    "type": "post",
+    "url": "/jobs/:jobId/:taskId/registerOccurrence",
+    "title": "Register an occurrence",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "jobId",
+            "description": "<p>Job unique ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "taskId",
+            "description": "<p>Task unique ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "occurrenceType",
+            "description": "<p>Occurrence type (Predeterminated string).</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.1.0",
+    "name": "PostTaskInit",
+    "group": "Jobs",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "job",
+            "description": "<p>Job with a occurrence registered.</p>"
           }
         ]
       },
