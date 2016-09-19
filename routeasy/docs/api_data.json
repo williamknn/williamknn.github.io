@@ -219,7 +219,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}",
           "type": "json"
         }
       ]
@@ -274,7 +274,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}",
           "type": "json"
         }
       ]
@@ -341,7 +341,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}",
           "type": "json"
         }
       ]
@@ -414,7 +414,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}",
           "type": "json"
         }
       ]
@@ -487,7 +487,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}",
           "type": "json"
         }
       ]
@@ -566,7 +566,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\nHTTP/1.1 400 Bad Request\n{\n    \"message\": \"Only \\\"operating\\\" tasks can have their geolocation updated\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\nHTTP/1.1 400 Bad Request\n{\n    \"message\": \"Only \\\"operating\\\" tasks can have their geolocation updated\"\n}",
           "type": "json"
         }
       ]
@@ -792,7 +792,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}",
           "type": "json"
         }
       ]
@@ -859,7 +859,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}",
           "type": "json"
         }
       ]
@@ -999,7 +999,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}",
           "type": "json"
         }
       ]
@@ -1072,7 +1072,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}",
           "type": "json"
         }
       ]
@@ -1151,7 +1151,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}",
           "type": "json"
         }
       ]
