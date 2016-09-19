@@ -194,7 +194,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK",
+          "content": "HTTP/1.1 200 OK\n {\n     \"_id\" : ObjectId(\"57daed700963df0e203e6b90\"),\n     \"created\" : ISODate(\"2016-09-15T18:50:24.340Z\"),\n     \"operator\" : ObjectId(\"5789aaf9afb20c106125ddba\"),\n     \"routing\" : ObjectId(\"57bf069bb174820251079afe\"),\n     \"version\" : ObjectId(\"57d4312e49d38dd20fdbb820\"),\n     \"status\" : \"assigned\",\n     \"completed\" : null,\n     \"tasks\" : [\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 0,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 1,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 2,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 3,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 4,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 5,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 6,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 7,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 8,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 9,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 10,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 11,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 12,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         }\n     ],\n     \"log\" : [ ],\n     \"__v\" : 0\n }",
           "type": "json"
         }
       ]
@@ -316,7 +316,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK",
+          "content": "HTTP/1.1 200 OK\n{\n    \"status\": \"accepted\"\n}",
           "type": "json"
         }
       ]
@@ -389,7 +389,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK",
+          "content": "HTTP/1.1 200 OK\n{\n    \"task.status\": \"arrived\"\n}",
           "type": "json"
         }
       ]
@@ -707,13 +707,19 @@ define({ "api": [
             "optional": false,
             "field": "NotAuthenticated",
             "description": "<p>Request was not authenticated.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Duplicated",
+            "description": "<p>Trying to create a job that already exists.</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\nHTTP/1.1 400 Bad Request\n{\n    \"message\": \"This route is already been monitored.\"\n}",
           "type": "json"
         }
       ]
@@ -828,7 +834,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK",
+          "content": "HTTP/1.1 200 OK\n{\n    \"status\": \"refused\"\n}",
           "type": "json"
         }
       ]
@@ -895,7 +901,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK",
+          "content": "HTTP/1.1 200 OK\n{\n    \"status\": \"sent\"\n}",
           "type": "json"
         }
       ]
@@ -920,7 +926,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\nHTTP/1.1 400 Bad Request\n{\n    \"message\": \"Only \\\"assigned\\\" jobs can be sent\"\n}",
           "type": "json"
         }
       ]
@@ -1041,7 +1047,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK",
+          "content": "HTTP/1.1 200 OK\n{\n    \"status\": \"started\"\n}",
           "type": "json"
         }
       ]
