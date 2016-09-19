@@ -462,7 +462,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK",
+          "content": "HTTP/1.1 200 OK\n{\n    \"task.status\": \"completed\"\n}",
           "type": "json"
         }
       ]
@@ -541,7 +541,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK",
+          "content": "HTTP/1.1 200 OK\n \"log\": [\n         {\n             \"type\": \"geolocation_update\",\n             \"date\": \"2016-09-19T20:56:41.147Z\",\n             \"info\": {\n                 \"lat\": -23.6178025,\n                 \"lng\": -46.6404652\n             },\n             \"_id\": \"57e051096cab298630b90d22\"\n         }\n     ]",
           "type": "json"
         }
       ]
@@ -566,7 +566,7 @@
       "examples": [
         {
           "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\n}",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\nHTTP/1.1 400 Bad Request\n{\n    \"message\": \"Only \\\"operating\\\" tasks can have their geolocation updated\"\n}\n}",
           "type": "json"
         }
       ]
@@ -974,7 +974,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK",
+          "content": "HTTP/1.1 200 OK\n{\n    \"task.status\": \"servicing\"\n}",
           "type": "json"
         }
       ]
@@ -1109,7 +1109,7 @@
       }
     },
     "version": "0.1.0",
-    "name": "PostTaskInit",
+    "name": "PostTaskOccurrence",
     "group": "Jobs",
     "success": {
       "fields": {
@@ -1126,7 +1126,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK",
+          "content": "HTTP/1.1 200 OK\n{\n    \"task.status\": \"occurrence\",\n    \"task.occurrence_type\": \"Predeterminated string (sent with request)\"\n}",
           "type": "json"
         }
       ]
