@@ -194,7 +194,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n {\n     \"_id\" : ObjectId(\"57daed700963df0e203e6b90\"),\n     \"created\" : ISODate(\"2016-09-15T18:50:24.340Z\"),\n     \"operator\" : ObjectId(\"5789aaf9afb20c106125ddba\"),\n     \"routing\" : ObjectId(\"57bf069bb174820251079afe\"),\n     \"version\" : ObjectId(\"57d4312e49d38dd20fdbb820\"),\n     \"status\" : \"assigned\",\n     \"completed\" : null,\n     \"tasks\" : [\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 0,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 1,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 2,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 3,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 4,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 5,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 6,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 7,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 8,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 9,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 10,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 11,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 12,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"fileoperatorss\" : [ ]\n         }\n     ],\n     \"log\" : [ ],\n     \"__v\" : 0\n }",
+          "content": "HTTP/1.1 200 OK\n {\n     \"_id\" : ObjectId(\"57daed700963df0e203e6b90\"),\n     \"created\" : ISODate(\"2016-09-15T18:50:24.340Z\"),\n     \"creator\" : ObjectId(\"57e2c22901ed2c6f0d2aea06\"),\n     \"due_date\" : ISODate(\"2016-09-20T20:00:00.000Z\"),\n     \"operator\" : ObjectId(\"5789aaf9afb20c106125ddba\"),\n     \"routing\" : ObjectId(\"57bf069bb174820251079afe\"),\n     \"version\" : ObjectId(\"57d4312e49d38dd20fdbb820\"),\n     \"status\" : \"assigned\",\n     \"distance\" : 33.9,\n     \"route\" : \"0\",\n     \"tasks\" : [\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 0,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 1,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 2,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 3,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 4,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 5,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 6,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 7,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 8,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 9,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 10,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 11,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 12,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         }\n     ],\n     \"log\" : [ ],\n     \"__v\" : 0\n }",
           "type": "json"
         }
       ]
@@ -316,7 +316,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n{\n    \"status\": \"accepted\"\n}",
+          "content": "HTTP/1.1 200 OK\n{\n    \"job.status\": \"accepted\"\n}",
           "type": "json"
         }
       ]
@@ -576,159 +576,6 @@ define({ "api": [
   },
   {
     "type": "post",
-    "url": "/jobs",
-    "title": "Create new job",
-    "version": "0.1.0",
-    "name": "PostJob",
-    "group": "Jobs",
-    "description": "<p>Make sure do you have at least a routing done before create a job.</p>",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "Object",
-            "optional": false,
-            "field": "job",
-            "description": "<p>object.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "Date",
-            "optional": false,
-            "field": "job.created",
-            "description": "<p>Date of creation.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "ObjectId",
-            "optional": false,
-            "field": "job.operator",
-            "description": "<p>Operator ID.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "ObjectId",
-            "optional": false,
-            "field": "job.routing",
-            "description": "<p>Routing ID.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "ObjectId",
-            "optional": false,
-            "field": "job.version",
-            "description": "<p>Version ID.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "job.status",
-            "description": "<p>Job status ['assigned', 'sent', 'accepted', 'refused', 'operating', 'alert', 'aborted', 'completed'].</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "Object",
-            "optional": false,
-            "field": "job.tasks",
-            "description": "<p>Job tasks.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "job.tasks.type",
-            "description": "<p>Task type ['delivery', 'returning', 'paused'].</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "Number",
-            "optional": false,
-            "field": "job.tasks.direction",
-            "description": "<p>Task direction number.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "job.tasks.status",
-            "description": "<p>Task status ['created', 'started', 'arrived', 'servicing', 'completed', 'occurrence'].</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "job.tasks.additional_info",
-            "description": "<p>Task comments .</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "Array",
-            "optional": false,
-            "field": "job.tasks.log",
-            "description": "<p>Task log of events .</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "Array",
-            "optional": false,
-            "field": "job.tasks.files",
-            "description": "<p>Task files .</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Jobs[]",
-            "optional": false,
-            "field": "jobs",
-            "description": "<p>Create a new job.</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n {\n     \"_id\" : ObjectId(\"57daed700963df0e203e6b90\"),\n     \"created\" : ISODate(\"2016-09-15T18:50:24.340Z\"),\n     \"operator\" : ObjectId(\"5789aaf9afb20c106125ddba\"),\n     \"routing\" : ObjectId(\"57bf069bb174820251079afe\"),\n     \"version\" : ObjectId(\"57d4312e49d38dd20fdbb820\"),\n     \"status\" : \"assigned\",\n     \"completed\" : null,\n     \"tasks\" : [\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 0,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 1,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 2,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 3,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 4,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 5,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 6,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 7,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 8,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 9,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 10,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 11,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         },\n         {\n             \"type\" : \"delivery\",\n             \"direction\" : 12,\n             \"status\" : \"created\",\n             \"additional_info\" : \"\",\n             \"log\" : [ ],\n             \"files\" : [ ]\n         }\n     ],\n     \"log\" : [ ],\n     \"__v\" : 0\n }",
-          "type": "json"
-        }
-      ]
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "NotAuthenticated",
-            "description": "<p>Request was not authenticated.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Duplicated",
-            "description": "<p>Trying to create a job that already exists.</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\nHTTP/1.1 400 Bad Request\n{\n    \"message\": \"This route is already been monitored.\"\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "filename": "app/routes/job.server.routes.js",
-    "groupTitle": "Jobs"
-  },
-  {
-    "type": "post",
     "url": "/jobs/:jobId/operator",
     "title": "Set new operator",
     "parameter": {
@@ -834,7 +681,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n{\n    \"status\": \"refused\"\n}",
+          "content": "HTTP/1.1 200 OK\n{\n    \"job.status\": \"refused\"\n}",
           "type": "json"
         }
       ]
@@ -901,7 +748,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n{\n    \"status\": \"sent\"\n}",
+          "content": "HTTP/1.1 200 OK\n{\n    \"job.status\": \"sent\",\n    \"job.received\": \"ISODate(\"2016-10-03T22:40:50.400Z\")\"\n}",
           "type": "json"
         }
       ]
@@ -1047,7 +894,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n{\n    \"status\": \"started\"\n}",
+          "content": "HTTP/1.1 200 OK\n{\n    \"job.status\": \"started\"\n}",
           "type": "json"
         }
       ]
@@ -1228,67 +1075,6 @@ define({ "api": [
     },
     "filename": "app/routes/users.server.routes.js",
     "groupTitle": "Login"
-  },
-  {
-    "type": "get",
-    "url": "/occurrences",
-    "title": "Request Occurrences list",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "optional": false,
-            "field": "managerId",
-            "description": "<p>Manager unique ID.</p>"
-          }
-        ]
-      }
-    },
-    "version": "0.1.0",
-    "name": "GetOccurrences",
-    "group": "Occurrences",
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "Occurrences[]",
-            "optional": false,
-            "field": "occurrences",
-            "description": "<p>List of occurrences.</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n [\n      {\n        \"_id\": \"57eb005be5b485920d7faf75\",\n        \"manager\": \"57e2c22901ed2c6f0d2aea06\",\n        \"type\": \"job\",\n        \"code\": \"666\",\n        \"description\": \"Apareceu um demônio no meio do caminho\",\n        \"__v\": 0\n      },\n      {\n        \"_id\": \"57eb007fe5b485920d7faf76\",\n        \"manager\": \"57e2c22901ed2c6f0d2aea06\",\n        \"type\": \"task\",\n        \"code\": \"001\",\n        \"description\": \"Motorista está com fome e não tem nenhum Graal por perto\",\n        \"__v\": 0\n      },\n      {\n        \"_id\": \"57eb00dbe5b485920d7faf77\",\n        \"manager\": \"57e2c22901ed2c6f0d2aea06\",\n        \"type\": \"task\",\n        \"code\": \"002\",\n        \"description\": \"Parei pra pegar um Dragonite e bati o carro\",\n        \"__v\": 0\n      },\n      {\n        \"_id\": \"57eb0af691b0db6916fa0ceb\",\n        \"manager\": \"57e2c22901ed2c6f0d2aea06\",\n        \"type\": \"job\",\n        \"code\": \"001\",\n        \"description\": \"Atropelei uma criança\",\n        \"__v\": 0\n      },\n      {\n        \"_id\": \"57eb0b2891b0db6916fa0cec\",\n        \"manager\": \"57e2c22901ed2c6f0d2aea06\",\n        \"type\": \"job\",\n        \"code\": \"002\",\n        \"description\": \"Parei para pedir um autógrafo para o Sr. William Kennedy e depois me perdi\",\n        \"__v\": 0\n      },\n      {\n        \"_id\": \"57eb0b3f91b0db6916fa0ced\",\n        \"manager\": \"57e2c22901ed2c6f0d2aea06\",\n        \"type\": \"task\",\n        \"code\": \"003\",\n        \"description\": \"Minha mãe pediu para eu passar na padaria no caminho\",\n        \"__v\": 0\n      }\n ]",
-          "type": "json"
-        }
-      ]
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "NotAuthenticated",
-            "description": "<p>Request was not authenticated.</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Error-Response:",
-          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "filename": "app/routes/occurrences.server.routes.js",
-    "groupTitle": "Occurrences"
   },
   {
     "type": "post",
