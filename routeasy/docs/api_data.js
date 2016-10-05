@@ -284,6 +284,73 @@ define({ "api": [
   },
   {
     "type": "post",
+    "url": "/jobs/:jobId/abort",
+    "title": "Abort job",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "jobId",
+            "description": "<p>Job unique ID.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.1.0",
+    "name": "PostAbortJob",
+    "group": "Jobs",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "job",
+            "description": "<p>Abort job.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n    \"job.status\": \"aborted\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NotAuthenticated",
+            "description": "<p>Request was not authenticated.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "NotAuthorized",
+            "description": "<p>User is not authorized.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthenticated\"\n}\nHTTP/1.1 403 Forbidden\n{\n    \"type\": \"notauthorized\"\n}\nHTTP/1.1 400 Bad Request\n{\n    \"message\": \"Only \\\"sent\\\" jobs can be aborted\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "app/routes/job.server.routes.js",
+    "groupTitle": "Jobs"
+  },
+  {
+    "type": "post",
     "url": "/jobs/:jobId/accept",
     "title": "Accept job",
     "parameter": {
