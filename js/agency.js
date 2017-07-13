@@ -31,7 +31,7 @@ $(function() {
     birth = new Date(birth);
     birth = Math.abs(birth.getUTCFullYear() - 1970);
     
-    $('#age').append(document.createTextNode(birth));
+    $('.age').append(document.createTextNode(birth));
 
     let copyright = new Date().getUTCFullYear();
     $('#copyright').append(document.createTextNode(copyright));

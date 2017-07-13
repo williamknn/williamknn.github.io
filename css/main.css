@@ -805,11 +805,11 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .close-modal {
-    position: absolute;
+    position: fixed;
     top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
+    right: 45px;
+    width: 45px;
+    height: 45px;
     background-color: transparent;
     cursor: pointer;
 }
@@ -821,9 +821,9 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
-    height: 75px;
+    height: 45px;
     margin-left: 35px;
-    background-color: #222;
+    background-color: #F9F9F9;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -832,8 +832,8 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
-    height: 75px;
-    background-color: #222;
+    height: 45px;
+    background-color: #F9F9F9;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -864,4 +864,18 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #fed136;
+}
+
+/**
+ *  Custom
+ */
+
+.cv-modal {
+    text-align: left;
+}
+
+.modal-content {
+    background-color: #000 !important;
+    color: #FFF;
+    opacity: 0.9;
 }
