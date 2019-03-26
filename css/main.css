@@ -75,6 +75,7 @@ h6 {
     font-weight: 700;
     color: #fff;
     background-color: #fed136;
+    text-shadow: 0px 0px 3px #666;
 }
 
 .btn-primary:hover,
@@ -85,6 +86,7 @@ h6 {
     border-color: #f6bf01;
     color: #fff;
     background-color: #fec503;
+    text-shadow: 0px 0px 3px #666;
 }
 
 .btn-primary:active,
@@ -802,6 +804,7 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content img {
     margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .portfolio-modal .close-modal {
@@ -875,7 +878,6 @@ body {
 }
 
 .modal-content {
-    background-color: #000 !important;
+    background-image: url('../img/modal-pattern.png');
     color: #FFF;
-    opacity: 0.9;
 }
