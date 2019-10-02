@@ -1,23 +1,12 @@
----
-description: >-
-  A população ela precisa da Zona Franca de Manaus, porque na Zona franca de
-  Manaus, não é uma zona de exportação, é uma zona para o Brasil. Portanto ela
-  tem um objetivo, ela evita o desmatamento....
----
+## Programação Rock in Rio - 04/10
+Portões abrem às 14:00
 
-# Teste de Documentação
-
-### Zona Franca de Manaus
-
-A população ela precisa da Zona Franca de Manaus, porque na Zona franca de Manaus, não é uma zona de exportação, é uma zona para o Brasil. Portanto ela tem um objetivo, ela evita o desmatamento, que é altamente lucrativo. Derrubar arvores da natureza é muito lucrativo!
-
-#### Agora vamos ver uma tabela de schema
-
-| Campo | Descrição | Outra coisa |
-| :--- | :--- | :--- |
-| main | principal | oi |
-| main.name | nome principal | tudo bem |
-| main.age | idade principal | sim |
-| id | id | id |
-| zaburgo | indice de zaburgo | e vc? |
+- 15:00 - **[S]** Nervosa
+- 16:25 - **[S]** Torture Squad & Claustrofobia + Chuck Billy (Testament)
+- 17:30 - **[M]** Sepultura
+- 18:30 - **[S]** Anthrax
+- 19:30 - **[M]** Helloween
+- 20:30 - **[S]** Slayer
+- 21:30 - **[M]** Iron Maiden
+- 00:05 - **[M]** Scorpions
 
